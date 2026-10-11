@@ -1,0 +1,43 @@
+0:00.00  SQ1  wet hollow pop
+0:01.64  SQ2  wet hollow pops
+0:05.14  SQ3  squelchy snap and rattle
+0:06.72  SQ4  cartoon boing (short)
+0:08.10  SQ5  cartoon boing (long)
+0:10.60  SQ6  wet crunch burst
+0:12.00  SQ7  wet crunchy impact
+0:13.81  SQ8  synthetic bloop
+0:14.95  SQ9  synthetic ascending bloop
+0:17.44  P1   hollow synthetic pop
+0:19.03  P2   synthetic pop
+0:20.24  P3   airy pop
+0:22.46  P4   hollow pop
+0:23.72  P5   UI pop
+0:25.20  P6   ascending UI chime
+0:27.40  P7   digital notification chime
+0:29.02  H1   glitchy descending sweep
+0:32.42  H2   sci-fi energy impact
+0:35.82  H3   metallic sci-fi impact
+0:39.22  H4   synthetic chime sting
+0:43.62  D1   repeating electronic beeps A
+0:47.02  D2   repeating electronic beeps B
+0:50.42  D3   short digital beep
+0:51.46  D4   double electronic beep
+0:52.79  D5   digital chirp
+0:54.72  D6   digital zip click
+0:57.02  T1   soft muted tap
+0:58.18  T2   short click
+0:59.32  T3   double click
+1:00.99  T4   keyboard typing
+1:04.29  G1   mechanical ratchet
+1:06.20  G2   mechanical ratchet clicks
+1:08.68  G3   rapid mechanical clicks
+1:10.23  G4   heavy mechanical click
+1:12.11  G5   plastic ratchet clicks
+1:15.51  G6   ratchet winding
+1:18.09  G7   clock ticking
+1:21.49  A1   short airy whoosh
+1:23.28  A2   fast airy whoosh
+1:25.62  A3   quick whoosh
+1:27.58  A4   warbling low whoosh
+1:30.98  A5   low muffled whoosh
+1:34.38  S1   camera flash charge

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<title>Caption font compare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800;900&family=Tajawal:wght@800;900&family=IBM+Plex+Sans+Arabic:wght@700&family=Blaka&family=Rakkas&family=Readex+Pro:wght@700&family=Lalezar&family=Noto+Kufi+Arabic:wght@800;900&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F4F4F2; --grid:rgba(0,0,0,.06); --ink:#141414; --mint:#3DDC97; }
+  body { margin:0; background:var(--bg);
+    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 44px 44px; font-family:Inter, sans-serif; color:var(--ink); padding:28px; }
+  .grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:22px; }
+  .card { background:rgba(255,255,255,.55); backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.9);
+    box-shadow:0 10px 30px rgba(0,0,0,.07), inset 0 1px 0 #fff; border-radius:26px; padding:22px 22px 26px; direction:rtl; text-align:right; }
+  .tag { direction:ltr; text-align:left; font-size:13px; font-weight:700; letter-spacing:.02em; opacity:.6; margin-bottom:14px; }
+  .l1 { font-size:46px; line-height:1.25; }
+  .l2 { font-size:30px; line-height:1.4; margin-top:6px; opacity:.9; }
+  mark { background:none; color:var(--ink); position:relative; padding:0 .12em; }
+  mark::before { content:""; position:absolute; inset:.18em -.05em .08em; background:var(--mint); border-radius:.22em; z-index:-1; }
+  .n { font-family:Inter; font-weight:700; color:var(--ink); }
+</style>
+</head>
+<body>
+<div class="grid" id="g"></div>
+<script>
+const fonts = [
+  ["1 · Alexandria 900", "'Alexandria'", 900],
+  ["2 · Tajawal 900", "'Tajawal'", 900],
+  ["3 · IBM Plex Sans Arabic 700", "'IBM Plex Sans Arabic'", 700],
+  ["4 · Noto Kufi Arabic 900", "'Noto Kufi Arabic'", 900],
+  ["5 · Readex Pro 700", "'Readex Pro'", 700],
+  ["6 · Lalezar", "'Lalezar'", 400],
+  ["7 · Rakkas (display)", "'Rakkas'", 400],
+  ["8 · Blaka (display)", "'Blaka'", 400],
+];
+document.getElementById('g').innerHTML = fonts.map(([n,f,w]) => `
+  <div class="card" style="font-family:${f};font-weight:${w}">
+    <div class="tag">${n}</div>
+    <div class="l1">الـ <mark>AI</mark> باش يبدّل خدمتك</div>
+    <div class="l2">ثلاثة <mark>أدوات</mark> لازم تعرفهم</div>
+  </div>`).join('');
+</script>
+</body>
+</html>
