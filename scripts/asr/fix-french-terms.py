@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Put French/English terms back in Latin letters in an Arabic-script Derja transcript.
 
-  models/asr-env/bin/python models/fix-french-terms.py words.json [--out fixed.json] [--glossary g.json]
+  models/asr-env/bin/python scripts/asr/fix-french-terms.py words.json [--out fixed.json] [--glossary g.json]
 
 Input: the JSON written by transcribe-tunisian.py. Each word is matched against french-glossary.json
 (normalised, with a similarity threshold). Prints every replacement so you can check them; words not

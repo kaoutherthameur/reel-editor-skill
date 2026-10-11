@@ -8,7 +8,7 @@
   "Volumes are relative to the raw voice. With the Auphonic voice (voice_studio.wav, -14 LUFS) multiply every SFX volume by 1.8 (creator, 2026-10-07: 1.0 'very low', 1.5 'a little bit louder, not too much', 1.8 chosen).",
   "Tracks: data-track-index 0-1 video layers, 2 voice, 3+ one per SFX cue. ids sfx-NN-<id>.",
   "Only sound events that are on screen. No sound for captions.",
-  "Need a sound not in the kit: search HeyGen (tools/heygen/sfx.py \"query\" -d), normalise to I=-20, propose it to the creator before adding it here."
+  "Need a sound not in the kit: search HeyGen (scripts/heygen/sfx.py \"query\" -d), normalise to I=-20, propose it to the creator before adding it here."
  ],
  "events": {
   "video-start": {

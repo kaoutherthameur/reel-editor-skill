@@ -51,8 +51,8 @@ Content-Creator/videos/<slug>/  one folder per episode
 2. Extract audio to `audio/raw.wav` (ffmpeg, mono, 48 kHz).
 3. RAM gate: measure free memory. If under 5 GB, stop and print a request to close Chrome, Blender, Docker and other heavy apps; the agent relays it to the user and waits. `--force` overrides.
 4. In parallel:
-   - **Auphonic**: `tools/auphonic/enhance.py audio/raw.wav --preset studio --out audio/`; prep.py renames the result to `audio/voice_studio.wav`. Cloud job, light on RAM. Extraction keeps full bit depth (no gain added) since enhance.py normalises itself.
-   - **Whisper Tunisian**: `models/asr-env/bin/python models/transcribe-tunisian.py audio/raw.wav --out transcript.raw.json` (word timestamps). Uses raw audio, so it does not wait for Auphonic.
+   - **Auphonic**: `scripts/auphonic/enhance.py audio/raw.wav --preset studio --out audio/`; prep.py renames the result to `audio/voice_studio.wav`. Cloud job, light on RAM. Extraction keeps full bit depth (no gain added) since enhance.py normalises itself.
+   - **Whisper Tunisian**: `models/asr-env/bin/python scripts/asr/transcribe-tunisian.py audio/raw.wav --out transcript.raw.json` (word timestamps). Uses raw audio, so it does not wait for Auphonic.
    Either failing does not cancel the other; the script reports both results.
 
 ### Step 5: transcript fix (agent, manual — no script)
@@ -60,7 +60,7 @@ Content-Creator/videos/<slug>/  one folder per episode
 - Word timings are kept: only `text` changes. If ASR split one foreign word into several chunks, merge them (first start, last end).
 - Derja stays verbatim. Clear mistranscriptions are fixed; uncertain words are flagged, never guessed.
 - Outputs: `transcript.fixed.json` (feeds captions), `transcript.md` (readable), `transcript.changes.md` (every change with timestamp + flagged words) for the founder's later pass.
-- `models/fix-french-terms.py` is not used.
+- `scripts/asr/fix-french-terms.py` is not used.
 
 ### Step 6: audio swap
 Final audio for the composition is `audio/voice_studio.wav`. If Auphonic failed, fall back to `audio/raw.wav` and say so.
@@ -101,7 +101,7 @@ Checklist, three kinds:
 Previews may use placeholders; final render waits for every asset.
 
 ### Step 9: SFX plan (`sfx-plan.md`)
-- One row per cue: time · event · `tools/heygen/sfx.py` query · top 3 candidates (name, duration, `peak_offset`).
+- One row per cue: time · event · `scripts/heygen/sfx.py` query · top 3 candidates (name, duration, `peak_offset`).
 - **House kit (approved 2026-10-07): `assets/sfx/kit/kit.json`.** HeyGen only, no synthetic sounds. Map each on-screen event to its kit role and reuse the file; search HeyGen only for event types the kit lacks, then propose them before adding.
 - Kit roles: video-start S1 (.07, riser from 0) · hook-text-in A1 (.14) · hook-word-lands H2 (.16) · pill-tag-pop P2 (.22) · full-to-popout A4 (.20) · card-appears P5 (.20) · ui-tap T1 (.18) · in-scene-swap A1 (.16) · folder-opens G6 (.08) · items-rise D6 (.16) · conveyor A2 (.20) · carousel-reveal SQ8 (.22) · typing T4 (.10–.12) · carousel-step A3 (.16) + T1 on landing · glass-appear SQ1 (.24) · glass-split SQ3 (.22) · glass-label T2 (.14) · glass-merge SQ9 (.20) · glass-pop-away P4 (.22).
 - `data-start = event_time − hit`. Clips are loudnorm I=−20; mixed low under the voice; no inserted silence. No sound on captions.
