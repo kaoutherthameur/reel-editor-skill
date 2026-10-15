@@ -1,0 +1,276 @@
+{
+ "approved": "2026-10-07 (demo-v3-sfx.mp4)",
+ "rules": [
+  "All files are HeyGen library clips (tools/heygen/library), trimmed and loudness-normalised (loudnorm I=-20). Use them as-is.",
+  "Event time = the moment named in events.<role>.event. data-start = event_time - hit. If that is negative, use 0 (the hit lands slightly late, fine at video start).",
+  "data-duration = sounds.<id>.duration, trimmed so the cue ends by the composition end.",
+  "data-volume = events.<role>.volume (typing: 0.10-0.12).",
+  "Volumes are relative to the raw voice. With the Auphonic voice (voice_studio.wav, -14 LUFS) multiply every SFX volume by 1.8 (creator, 2026-10-07: 1.0 'very low', 1.5 'a little bit louder, not too much', 1.8 chosen).",
+  "Tracks: data-track-index 0-1 video layers, 2 voice, 3+ one per SFX cue. ids sfx-NN-<id>.",
+  "Only sound events that are on screen. No sound for captions.",
+  "Need a sound not in the kit: search HeyGen (scripts/heygen/sfx.py \"query\" -d), normalise to I=-20, propose it to the creator before adding it here."
+ ],
+ "events": {
+  "video-start": {
+   "sfx": "S1",
+   "volume": 0.07,
+   "note": "First frame. Starts at 0 (riser), very low, barely noticed.",
+   "event": "t=0; riser, data-start 0 (ignore hit)"
+  },
+  "hook-text-in": {
+   "sfx": "A1",
+   "volume": 0.14,
+   "note": "Hook text slides in.",
+   "event": "hook line starts moving in + 0.3 s"
+  },
+  "hook-word-lands": {
+   "sfx": "H2",
+   "volume": 0.16,
+   "note": "Big hook word (Anton/Alexandria) lands.",
+   "event": "big hook word lands"
+  },
+  "pill-tag-pop": {
+   "sfx": "P2",
+   "volume": 0.22,
+   "note": "Small pill / tag / chip pops in.",
+   "event": "pill reaches full scale"
+  },
+  "full-to-popout": {
+   "sfx": "A4",
+   "volume": 0.2,
+   "note": "Face full frame shrinks into the SPLIT pop-out.",
+   "event": "middle of the shrink into the card"
+  },
+  "card-appears": {
+   "sfx": "P5",
+   "volume": 0.2,
+   "note": "Acrylic card / browser screenshot appears.",
+   "event": "card starts entering"
+  },
+  "ui-tap": {
+   "sfx": "T1",
+   "volume": 0.18,
+   "note": "Tap or click on UI; also the landing of a carousel step.",
+   "event": "the tap / the step lands"
+  },
+  "in-scene-swap": {
+   "sfx": "A1",
+   "volume": 0.16,
+   "note": "One panel replaces another inside a scene (right to left).",
+   "event": "middle of the swap move"
+  },
+  "folder-opens": {
+   "sfx": "G6",
+   "volume": 0.08,
+   "note": "3D glass folder (ref-04) swings open. Keep very low.",
+   "event": "0.3 s after the open swing starts"
+  },
+  "items-rise": {
+   "sfx": "D6",
+   "volume": 0.16,
+   "note": "Cards / images / data rise out (folder fan-out, stats appear).",
+   "event": "cards / items reach their rest position"
+  },
+  "conveyor": {
+   "sfx": "A2",
+   "volume": 0.2,
+   "note": "Scene-to-scene conveyor transition, both directions.",
+   "event": "middle of the conveyor move (at + duration/2)"
+  },
+  "carousel-reveal": {
+   "sfx": "SQ8",
+   "volume": 0.22,
+   "note": "Cover-flow side cards slide out (ref-05 reveal).",
+   "event": "side cards start sliding out"
+  },
+  "typing": {
+   "sfx": "T4",
+   "volume": 0.11,
+   "note": "Prompt / text writes in. 0.10-0.12.",
+   "event": "first characters appear"
+  },
+  "carousel-step": {
+   "sfx": "A3",
+   "volume": 0.16,
+   "note": "Cover-flow step (pair with ui-tap at the landing).",
+   "event": "middle of the step move"
+  },
+  "glass-appear": {
+   "sfx": "SQ1",
+   "volume": 0.24,
+   "note": "Liquid glass bubble appears.",
+   "event": "bubble starts growing + 0.07 s"
+  },
+  "glass-split": {
+   "sfx": "SQ3",
+   "volume": 0.22,
+   "note": "Liquid glass splits into two (Zac snap).",
+   "event": "blobs separate"
+  },
+  "glass-label": {
+   "sfx": "T2",
+   "volume": 0.14,
+   "note": "Label lands on a glass element; one per label.",
+   "event": "label appears"
+  },
+  "glass-merge": {
+   "sfx": "SQ9",
+   "volume": 0.2,
+   "note": "Liquid glass blobs merge back.",
+   "event": "blobs touch"
+  },
+  "glass-pop-away": {
+   "sfx": "P4",
+   "volume": 0.22,
+   "note": "Glass element pops away / exits.",
+   "event": "glass vanishes"
+  }
+ },
+ "sounds": {
+  "A1": {
+   "name": "short airy whoosh",
+   "file": "A1.wav",
+   "source": "gentle-wind-swoosh_short-airy-whoosh_4ccf27.mp3",
+   "duration": 0.888,
+   "hit": 0.34,
+   "placement": "hit"
+  },
+  "A2": {
+   "name": "fast airy whoosh",
+   "file": "A2.wav",
+   "source": "gentle-wind-swoosh_fast-airy-whoosh_a4855a.mp3",
+   "duration": 1.44,
+   "hit": 0.45,
+   "placement": "hit"
+  },
+  "A3": {
+   "name": "quick whoosh",
+   "file": "A3.wav",
+   "source": "gentle-wind-swoosh_quick-whoosh_00caa7.mp3",
+   "duration": 1.056,
+   "hit": 0.215,
+   "placement": "hit"
+  },
+  "A4": {
+   "name": "warbling low whoosh",
+   "file": "A4.wav",
+   "source": "wobble-bounce_warbling-low-whoosh_891828.mp3",
+   "duration": 2.5,
+   "hit": 1.135,
+   "placement": "hit"
+  },
+  "D6": {
+   "name": "digital zip click",
+   "file": "D6.wav",
+   "source": "data-transfer-digital_digital-zip-click_d05a1a.mp3",
+   "duration": 1.392,
+   "hit": 0.83,
+   "placement": "hit"
+  },
+  "G6": {
+   "name": "ratchet winding",
+   "file": "G6.wav",
+   "source": "ratchet-click_ratchet-winding_7c9492.mp3",
+   "duration": 1.68,
+   "hit": 1.325,
+   "placement": "hit"
+  },
+  "H2": {
+   "name": "sci-fi energy impact",
+   "file": "H2.wav",
+   "source": "sci-fi-hologram-appear_sci-fi-energy-impact_3bfa5c.mp3",
+   "duration": 1.92,
+   "hit": 0.35,
+   "placement": "hit"
+  },
+  "P2": {
+   "name": "synthetic pop",
+   "file": "P2.wav",
+   "source": "bubble-pop_synthetic-pop_0fae75.mp3",
+   "duration": 0.312,
+   "hit": 0.115,
+   "placement": "hit"
+  },
+  "P4": {
+   "name": "hollow pop",
+   "file": "P4.wav",
+   "source": "bubble-pop_hollow-pop_9efe59.mp3",
+   "duration": 0.36,
+   "hit": 0.16,
+   "placement": "hit"
+  },
+  "P5": {
+   "name": "UI pop",
+   "file": "P5.wav",
+   "source": "game-ui-confirm_ui-pop_4558aa.mp3",
+   "duration": 0.576,
+   "hit": 0.05,
+   "placement": "hit"
+  },
+  "S1": {
+   "name": "camera flash charge",
+   "file": "S1.wav",
+   "source": "camera-flash-charging-whine_camera-flash-charge_9dc7cb.mp3",
+   "duration": 1.7,
+   "hit": 0.22,
+   "placement": "riser"
+  },
+  "SQ1": {
+   "name": "wet hollow pop",
+   "file": "SQ1.wav",
+   "source": "wet-pop_wet-hollow-pop_3ac669.mp3",
+   "duration": 0.744,
+   "hit": 0.585,
+   "placement": "hit"
+  },
+  "SQ3": {
+   "name": "squelchy snap and rattle",
+   "file": "SQ3.wav",
+   "source": "goo-squelch_squelchy-snap-and-rattle_6c489d.mp3",
+   "duration": 0.672,
+   "hit": 0.14,
+   "placement": "hit"
+  },
+  "SQ8": {
+   "name": "synthetic bloop",
+   "file": "SQ8.wav",
+   "source": "hologram_synthetic-bloop_c80309.mp3",
+   "duration": 0.24,
+   "hit": 0.055,
+   "placement": "hit"
+  },
+  "SQ9": {
+   "name": "synthetic ascending bloop",
+   "file": "SQ9.wav",
+   "source": "hologram_synthetic-ascending-bloop_326125.mp3",
+   "duration": 1.584,
+   "hit": 0.105,
+   "placement": "hit"
+  },
+  "T1": {
+   "name": "soft muted tap",
+   "file": "T1.wav",
+   "source": "iphone-tap_soft-muted-tap_19bd17.mp3",
+   "duration": 0.264,
+   "hit": 0.055,
+   "placement": "hit"
+  },
+  "T2": {
+   "name": "short click",
+   "file": "T2.wav",
+   "source": "touchscreen-tap_short-click_cf8c57.mp3",
+   "duration": 0.24,
+   "hit": 0.09,
+   "placement": "hit"
+  },
+  "T4": {
+   "name": "keyboard typing",
+   "file": "T4.wav",
+   "source": "phone-keyboard-typing-taps_keyboard-typing_e401e1.mp3",
+   "duration": 0.6,
+   "hit": 0.05,
+   "placement": "hit"
+  }
+ },
+ "voice_studio_gain": 1.8
+}

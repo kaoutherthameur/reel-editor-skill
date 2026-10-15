@@ -1,0 +1,21 @@
+0:00.00  HOLO-1 glitchy descending sweep
+0:03.50  HOLO-2 sci-fi energy impact
+0:07.00  HOLO-3 metallic sci-fi impact
+0:10.50  HOLO-4 synthetic chime sting
+0:15.00  DATA-1 repeating electronic beeps A
+0:18.50  DATA-2 repeating electronic beeps B
+0:22.00  DATA-3 short digital beep
+0:23.14  DATA-4 double electronic beep
+0:24.58  DATA-5 digital chirp
+0:26.61  DATA-6 digital zip click
+0:29.00  TAP-1 soft muted tap
+0:30.26  TAP-2 short click
+0:31.50  TAP-3 double click
+0:33.27  TAP-4 keyboard typing
+0:36.67  GEAR-1 mechanical ratchet
+0:38.68  GEAR-2 mechanical ratchet clicks
+0:41.26  GEAR-3 rapid mechanical clicks
+0:42.91  GEAR-4 heavy mechanical click
+0:44.90  GEAR-5 plastic ratchet clicks
+0:48.40  GEAR-6 ratchet winding
+0:51.08  GEAR-7 clock ticking

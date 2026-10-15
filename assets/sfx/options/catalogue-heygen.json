@@ -1,0 +1,174 @@
+{
+ "SQ1": {
+  "name": "wet hollow pop",
+  "file": "wet-pop_wet-hollow-pop_3ac669.mp3"
+ },
+ "SQ2": {
+  "name": "wet hollow pops",
+  "file": "wet-pop_wet-hollow-pops_f6027f.mp3"
+ },
+ "SQ3": {
+  "name": "squelchy snap and rattle",
+  "file": "goo-squelch_squelchy-snap-and-rattle_6c489d.mp3"
+ },
+ "SQ4": {
+  "name": "cartoon boing (short)",
+  "file": "cartoon-squish_cartoon-boing_f35ddf.mp3"
+ },
+ "SQ5": {
+  "name": "cartoon boing (long)",
+  "file": "cartoon-squish_cartoon-boing_a9aa59.mp3"
+ },
+ "SQ6": {
+  "name": "wet crunch burst",
+  "file": "squishy_wet-crunch-burst_6d4acf.mp3"
+ },
+ "SQ7": {
+  "name": "wet crunchy impact",
+  "file": "squishy_wet-crunchy-impact_674b7d.mp3"
+ },
+ "SQ8": {
+  "name": "synthetic bloop",
+  "file": "hologram_synthetic-bloop_c80309.mp3"
+ },
+ "SQ9": {
+  "name": "synthetic ascending bloop",
+  "file": "hologram_synthetic-ascending-bloop_326125.mp3"
+ },
+ "P1": {
+  "name": "hollow synthetic pop",
+  "file": "hologram_hollow-synthetic-pop_3f7016.mp3"
+ },
+ "P2": {
+  "name": "synthetic pop",
+  "file": "bubble-pop_synthetic-pop_0fae75.mp3"
+ },
+ "P3": {
+  "name": "airy pop",
+  "file": "bubble-pop_airy-pop_d9b59d.mp3"
+ },
+ "P4": {
+  "name": "hollow pop",
+  "file": "bubble-pop_hollow-pop_9efe59.mp3"
+ },
+ "P5": {
+  "name": "UI pop",
+  "file": "game-ui-confirm_ui-pop_4558aa.mp3"
+ },
+ "P6": {
+  "name": "ascending UI chime",
+  "file": "game-ui-confirm_ascending-ui-chime_35aab3.mp3"
+ },
+ "P7": {
+  "name": "digital notification chime",
+  "file": "subtle-shimmer-chime-notification-reveal_digital-notification-chime_fd8d68.mp3"
+ },
+ "H1": {
+  "name": "glitchy descending sweep",
+  "file": "sci-fi-hologram-appear_glitchy-descending-sweep_ca2389.mp3"
+ },
+ "H2": {
+  "name": "sci-fi energy impact",
+  "file": "sci-fi-hologram-appear_sci-fi-energy-impact_3bfa5c.mp3"
+ },
+ "H3": {
+  "name": "metallic sci-fi impact",
+  "file": "sci-fi-hologram-appear_metallic-sci-fi-impact_b660ec.mp3"
+ },
+ "H4": {
+  "name": "synthetic chime sting",
+  "file": "hologram_synthetic-chime-sting_514c22.mp3"
+ },
+ "D1": {
+  "name": "repeating electronic beeps A",
+  "file": "data-processing-computer-beeps_repeating-electronic-beeps_7f9f90.mp3"
+ },
+ "D2": {
+  "name": "repeating electronic beeps B",
+  "file": "data-processing-computer-beeps_repeating-electronic-beeps_fdf2e6.mp3"
+ },
+ "D3": {
+  "name": "short digital beep",
+  "file": "data-processing-computer-beeps_short-digital-beep_af9279.mp3"
+ },
+ "D4": {
+  "name": "double electronic beep",
+  "file": "data-processing-computer-beeps_double-electronic-beep_1d639b.mp3"
+ },
+ "D5": {
+  "name": "digital chirp",
+  "file": "data-transfer-digital_digital-chirp_20e478.mp3"
+ },
+ "D6": {
+  "name": "digital zip click",
+  "file": "data-transfer-digital_digital-zip-click_d05a1a.mp3"
+ },
+ "T1": {
+  "name": "soft muted tap",
+  "file": "iphone-tap_soft-muted-tap_19bd17.mp3"
+ },
+ "T2": {
+  "name": "short click",
+  "file": "touchscreen-tap_short-click_cf8c57.mp3"
+ },
+ "T3": {
+  "name": "double click",
+  "file": "touchscreen-tap_double-click_4f71ac.mp3"
+ },
+ "T4": {
+  "name": "keyboard typing",
+  "file": "phone-keyboard-typing-taps_keyboard-typing_e401e1.mp3"
+ },
+ "G1": {
+  "name": "mechanical ratchet",
+  "file": "ratchet-click_mechanical-ratchet_9d5be1.mp3"
+ },
+ "G2": {
+  "name": "mechanical ratchet clicks",
+  "file": "ratchet-click_mechanical-ratchet-clicks_393934.mp3"
+ },
+ "G3": {
+  "name": "rapid mechanical clicks",
+  "file": "gear-mechanism-click_rapid-mechanical-clicks_162db4.mp3"
+ },
+ "G4": {
+  "name": "heavy mechanical click",
+  "file": "gear-mechanism-click_heavy-mechanical-click_cb8707.mp3"
+ },
+ "G5": {
+  "name": "plastic ratchet clicks",
+  "file": "ratchet-click_plastic-ratchet-clicks_a6d43d.mp3"
+ },
+ "G6": {
+  "name": "ratchet winding",
+  "file": "ratchet-click_ratchet-winding_7c9492.mp3"
+ },
+ "G7": {
+  "name": "clock ticking",
+  "file": "mechanical-gears-turning_clock-ticking_44eb39.mp3"
+ },
+ "A1": {
+  "name": "short airy whoosh",
+  "file": "gentle-wind-swoosh_short-airy-whoosh_4ccf27.mp3"
+ },
+ "A2": {
+  "name": "fast airy whoosh",
+  "file": "gentle-wind-swoosh_fast-airy-whoosh_a4855a.mp3"
+ },
+ "A3": {
+  "name": "quick whoosh",
+  "file": "gentle-wind-swoosh_quick-whoosh_00caa7.mp3"
+ },
+ "A4": {
+  "name": "warbling low whoosh",
+  "file": "wobble-bounce_warbling-low-whoosh_891828.mp3"
+ },
+ "A5": {
+  "name": "low muffled whoosh",
+  "file": "goo-squelch_low-muffled-whoosh_2e34dc.mp3"
+ },
+ "S1": {
+  "name": "camera flash charge",
+  "file": "camera-flash-charging-whine_camera-flash-charge_9dc7cb.mp3"
+ }
+}

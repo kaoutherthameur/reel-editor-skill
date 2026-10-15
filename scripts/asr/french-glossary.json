@@ -1,0 +1,19 @@
+{
+  "_note": "Arabic-letter spelling (as the Tunisian ASR writes it) -> French/Latin. Add words as you meet them. Matching ignores diacritics and alef/ya variants and tolerates small spelling differences.",
+  "سينوس": "sinus",
+  "تسينوس": "sinus",
+  "كوسينوس": "cosinus",
+  "كو سينوس": "cosinus",
+  "الانقل": "l'angle",
+  "ليزونغل": "les angles",
+  "ساركل": "cercle",
+  "سيركل": "cercle",
+  "تريونغل": "triangle",
+  "كومبليمنتار": "complémentaire",
+  "الانديانز": "les Indiens",
+  "ليزوروبيان": "les Européens",
+  "فولو": "follow",
+  "المات": "math",
+  "ماث": "math",
+  "ميكانيك": "mécanique"
+}
